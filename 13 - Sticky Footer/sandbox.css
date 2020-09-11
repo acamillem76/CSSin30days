@@ -1,5 +1,21 @@
-/* ========================================
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 
-    CODE YOUR STYLES BELOW!
+.page-content {
+    min-height: 100%;
+    /* same measurement as footer */
+    margin-bottom: -120px;
+}
 
-   ====================================== */
+.page-content::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.page-content::after {
+    height: 120px;
+}

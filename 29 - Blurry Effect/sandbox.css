@@ -1,5 +1,21 @@
-/* ========================================
+.depth-gallery {
+    position: relative;
+    display: inline-block;
+}
 
-    CODE YOUR STYLES BELOW!
+.depth-gallery img {
+    border: 7px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+    transition: filter 0.3s linear, transform 0.3 linear;
+}
 
-   ====================================== */
+.depth-gallery:hover img {
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+.depth-gallery img:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+}
